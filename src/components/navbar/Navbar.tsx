@@ -1,6 +1,7 @@
 import React from "react";
 import { getAuthSession } from "@/lib/nextauth";
 import Logo from "@/components/logo/Logo";
+import UserMenu from "@/components/userMenu/UserMenu";
 import SignInButton from "@/components/signInButton/SignInButton";
 
 import style from "./Navbar.module.css";
@@ -14,7 +15,7 @@ const Navbar = async () => {
     <nav className={style.navbar}>
       <Logo />
       {session?.user ? (
-        <span>Welcome, {session?.user.name} </span>
+          <UserMenu user={session.user}/>
       ) : (
         <SignInButton text="Sign In" />
       )}

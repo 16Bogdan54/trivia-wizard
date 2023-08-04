@@ -8,6 +8,7 @@ const Logo = () => {
   return (
     <Link href="/" className={style.logo}>
       <MdScience />
+      Trivia Wizard
     </Link>
   );
 };

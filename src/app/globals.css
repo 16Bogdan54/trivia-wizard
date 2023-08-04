@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .body {
-    @apply pt-14
+    @apply pt-20 px-4
 }

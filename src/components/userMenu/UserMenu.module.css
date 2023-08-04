@@ -1,0 +1,19 @@
+.trigger {
+    @apply flex items-center justify-center p-2
+}
+
+.short_name {
+    @apply text-lg font-medium mr-2 hidden lg:block
+}
+
+.dropdown_content {
+    @apply bg-white
+}
+
+.signout_btn {
+    @apply text-red-600 cursor-pointer
+}
+
+.icon {
+    @apply w-4 h-4 ml-2
+}
