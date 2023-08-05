@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .body {
-    @apply py-24 px-4
+    @apply py-24 px-4 min-h-screen
 }

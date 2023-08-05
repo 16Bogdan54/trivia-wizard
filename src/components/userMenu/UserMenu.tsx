@@ -27,9 +27,6 @@ const UserMenu = ({ user }: Props) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className={style.trigger}>
-        <h2 className={style.short_name}>
-          {name?.substring(0, name?.indexOf(" ") + 2)}.
-        </h2>
         <Avatar>
           <AvatarImage src={image ? image : ""} />
           <AvatarFallback>{getInitials(name ? name : "PP")}</AvatarFallback>

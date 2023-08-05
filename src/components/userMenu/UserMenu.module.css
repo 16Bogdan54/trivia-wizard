@@ -2,10 +2,6 @@
     @apply flex items-center justify-center p-2
 }
 
-.short_name {
-    @apply text-lg font-medium mr-2 hidden lg:block
-}
-
 .signout_btn {
     @apply text-red-600 cursor-pointer
 }
