@@ -35,7 +35,7 @@ const UserMenu = ({ user }: Props) => {
           <AvatarFallback>{getInitials(name ? name : "PP")}</AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="bg-white" align="end">
+      <DropdownMenuContent className="bg-white dark:bg-gray-900" align="end">
         <DropdownMenuLabel>{name}</DropdownMenuLabel>
         <DropdownMenuItem>{email}</DropdownMenuItem>
         <DropdownMenuSeparator />

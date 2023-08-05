@@ -3,6 +3,7 @@ import { getAuthSession } from "@/lib/nextauth";
 import Logo from "@/components/logo/Logo";
 import UserMenu from "@/components/userMenu/UserMenu";
 import SignInButton from "@/components/signInButton/SignInButton";
+import ThemeToggle from "@/components/themeToggle/ThemeToggle";
 
 import style from "./Navbar.module.css";
 
@@ -14,11 +15,14 @@ const Navbar = async () => {
   return (
     <nav className={style.navbar}>
       <Logo />
-      {session?.user ? (
-          <UserMenu user={session.user}/>
-      ) : (
-        <SignInButton text="Sign In" />
-      )}
+      <div className={style.nav_items}>
+        <ThemeToggle />
+        {session?.user ? (
+          <UserMenu user={session.user} />
+        ) : (
+          <SignInButton text="Sign In" />
+        )}
+      </div>
     </nav>
   );
 };

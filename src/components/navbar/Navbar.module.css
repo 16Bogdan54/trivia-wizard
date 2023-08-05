@@ -1,3 +1,7 @@
 .navbar {
-    @apply fixed inset-x-0 top-0 z-10 h-fit border-b border-slate-500 p-4 bg-slate-300 flex items-center justify-between
+    @apply fixed inset-x-0 top-0 z-10 h-fit border-b border-slate-500 p-4 flex items-center justify-between
+}
+
+.nav_items {
+    @apply flex items-center justify-center gap-4
 }
