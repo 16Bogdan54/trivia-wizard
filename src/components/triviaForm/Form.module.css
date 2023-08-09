@@ -1,0 +1,7 @@
+.card_container {
+    @apply absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2
+}
+
+.card_title {
+    @apply text-2xl font-bold
+}

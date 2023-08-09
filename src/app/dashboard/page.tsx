@@ -5,7 +5,10 @@ import { Metadata } from "next";
 
 import style from "./Dashboard.module.css";
 import DetailsDialog from "@/components/detailsDialog/DetailsDialog";
-
+import QuizMe from "@/components/dashboard/quizMe/QuizMe";
+import History from "@/components/dashboard/history/History";
+import HotTopics from "@/components/dashboard/hotTopics/HotTopics";
+import RecentActivity from "@/components/dashboard/recentActivity/RecentActivity";
 export const metadata: Metadata = {
   title: "Dashboard",
   description: "Quiz yourself on anything!",
@@ -15,7 +18,7 @@ const Dashboard = async () => {
   const session = await getAuthSession();
 
   if (!session?.user) {
-    redirect("/");
+    return redirect("/");
   }
 
   return (
@@ -25,12 +28,12 @@ const Dashboard = async () => {
         <DetailsDialog />
       </div>
       <div className={style.quiz_cards}>
-        <span>Quiz Me Card</span>
-        <span>History card</span>
+        <QuizMe />
+        <History />
       </div>
       <div className={style.topic_cards}>
-        <span>hot topics card</span>
-        <span>recent activity card</span>
+        <HotTopics />
+        <RecentActivity />
       </div>
     </main>
   );
