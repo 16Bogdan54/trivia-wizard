@@ -9,6 +9,7 @@ import QuizMe from "@/components/dashboard/quizMe/QuizMe";
 import History from "@/components/dashboard/history/History";
 import HotTopics from "@/components/dashboard/hotTopics/HotTopics";
 import RecentActivity from "@/components/dashboard/recentActivity/RecentActivity";
+
 export const metadata: Metadata = {
   title: "Dashboard",
   description: "Quiz yourself on anything!",
@@ -33,7 +34,7 @@ const Dashboard = async () => {
       </div>
       <div className={style.topic_cards}>
         <HotTopics />
-        <RecentActivity />
+        {/*<RecentActivity />*/}
       </div>
     </main>
   );

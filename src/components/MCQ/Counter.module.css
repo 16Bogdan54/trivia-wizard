@@ -1,0 +1,11 @@
+.counter_card {
+    @apply flex flex-row items-center justify-center p-2
+}
+
+.correct_answers {
+    @apply mx-3 text-2xl text-[green]
+}
+
+.wrong_answers {
+    @apply mx-3 text-2xl text-[red]
+}

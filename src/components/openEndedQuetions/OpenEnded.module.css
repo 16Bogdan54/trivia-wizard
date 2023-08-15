@@ -1,0 +1,7 @@
+.percentage_card {
+    @apply flex flex-row items-center p-2
+}
+
+.percentage {
+    @apply ml-3 text-2xl opacity-75
+}
